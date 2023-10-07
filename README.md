@@ -39,6 +39,10 @@ The script follows a step-by-step approach to solve the supply chain network opt
 - Solves the optimization problem.
 - Retrieves and analyzes the solution, including the optimized quantity to be shipped between locations.
 
+## Completion Certificate
+
+<img width="608" alt="completion" src="https://github.com/arora-amit37/supply_chain_network_optimization/assets/50020662/52e15884-36d8-4977-9667-321d033d0edb">
+
 ## Usage
 
 You can run this script in RStudio by copying and pasting the code into the R script editor. Follow the comments and execute the code step by step to understand and customize the optimization problem according to your data and requirements.
