@@ -24,6 +24,10 @@ The script follows a step-by-step approach to solve the supply chain network opt
 - Creates an lpSolve object with the objective to minimize transportation costs.
 - Sets up the cost function based on the quantity shipped and distance.
 
+Network diagram:
+
+<img width="845" alt="network" src="https://github.com/arora-amit37/supply_chain_network_optimization/assets/50020662/a01ee4d5-7049-485b-b1e3-7bc555248fd3">
+
 ### Task 3 - Factory Capacity Constraints
 - Adds constraints to ensure that the quantity leaving each factory does not exceed its capacity.
 
