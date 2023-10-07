@@ -39,21 +39,42 @@ Network diagram:
 - Enforces that the quantity delivered to each customer matches their demand.
 - Sets integer constraints on certain variables.
 
-## Distance Matrix
+## Distance Table
 
-|           | Birmingham | Cambridge | Carlisle | Darlington | Exeter | Liverpool | London | Newcastle | Oxford | Sheffield | Truro |
-|-----------|------------|-----------|----------|------------|--------|-----------|--------|-----------|--------|-----------|-------|
-| Birmingham|      0     |     99    |   193    |    172     |  176   |    99     |  221   |    345    |   79   |    91     |  249  |
-| Cambridge |     99     |     0     |    60    |     37     |  206   |   221     |   58   |    130    |   99   |   168     |   65  |
-| Carlisle  |    193     |    60     |     0    |      0     |  346   |   178     |  307   |    178    |  258   |   130     |  458  |
-| Darlington|    172     |    37     |     0    |      0     |  354   |   178     |  249   |    130    |  258   |    91     |  354  |
-| Exeter    |    176     |   206     |   346    |    354     |    0   |   251     |  163   |     60    |  163   |   251     |   90  |
-| Liverpool |     99     |   221     |   178    |    178     |  251   |    0      |  307   |    236    |  258   |   130     |  458  |
-| London    |    221     |    58     |   307    |    249     |  163   |   307     |   0    |    236    |   56   |   168     |  284  |
-| Newcastle |    345     |   130     |   178    |    130     |   60   |   236     |  236   |     0     |  258   |    91     |  249  |
-| Oxford    |     79     |    99     |   258    |    258     |  163   |   258     |   56   |    258    |    0   |    79     |  168  |
-| Sheffield |     91     |   168     |   130    |     91     |  251   |   130     |  168   |     91    |   79   |    0      |  206  |
-| Truro     |    249     |    65     |   458    |    354     |   90   |   458     |  284   |    249    |  168   |   206     |    0  |
+| Source      | Destination | Distance |
+|-------------|-------------|----------|
+| Liverpool   | Newcastle   | 178      |
+| Liverpool   | Birmingham  | 99       |
+| Liverpool   | London      | 221      |
+| Liverpool   | Exeter      | 251      |
+| Brighton    | Newcastle   | 345      |
+| Brighton    | Birmingham  | 176      |
+| Brighton    | London      | 65       |
+| Brighton    | Exeter      | 206      |
+| Newcastle   | Carlisle    | 60       |
+| Newcastle   | Darlington  | 37       |
+| Newcastle   | Sheffield   | 130      |
+| Newcastle   | Cambridge   | 236      |
+| Newcastle   | Oxford      | 258      |
+| Newcastle   | Truro      | 458      |
+| Birmingham  | Carlisle    | 193      |
+| Birmingham  | Darlington  | 172      |
+| Birmingham  | Sheffield   | 91       |
+| Birmingham  | Cambridge   | 99       |
+| Birmingham  | Oxford      | 79       |
+| Birmingham  | Truro      | 249      |
+| London      | Carlisle    | 307      |
+| London      | Darlington  | 249      |
+| London      | Sheffield   | 168      |
+| London      | Cambridge   | 58       |
+| London      | Oxford      | 56       |
+| London      | Truro      | 284      |
+| Exeter      | Carlisle    | 346      |
+| Exeter      | Darlington  | 354      |
+| Exeter      | Sheffield   | 251      |
+| Exeter      | Cambridge   | 248      |
+| Exeter      | Oxford      | 163      |
+| Exeter      | Truro      | 90       |
 
 
 ### Task 6 - Run Optimizer, Obtain & Analyze Solution
